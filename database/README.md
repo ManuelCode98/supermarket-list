@@ -16,7 +16,25 @@ Configura los archivos en este orden
 
     *docker compose up -d*
 
-4. Restaurar base de datos desde archivo sql
+4. Copia el archivo al contenedor de docker, el contenedor se tiene que estar ejecutando
 
-    *cat backup.sql | docker exec -i CONTENEDOR-DE-DOCKER -U USUARIO -d NOMBRE-DE-LA-BASE-DE-DATOS*
+    *docker cp backup.sql CONTENEDOR-DOCKER:/backup.sql*
+
+5. Entra al contenedor de docker
+
+    *docker exec -it CONTENEDOR-DOCKER bash*
+
+6. Restaurar base de datos desde archivo sql
+
+    
+    *psql -U USUARIO -d BASE-DE-DATOS -f /backup.sql*
+
+
+6. Eliminar el archivo backup.sql que copiamos en el contenedor de docker
+
+    *rm /backup.sql*
+
+**Si te saliste del contenedor escribe el siguente comando**
+
+    *docker exec -it my_postgres rm /backup.sql*
 
