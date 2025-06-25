@@ -1,0 +1,66 @@
+
+
+.container-Update-the-entire-product {
+    width: 100%;
+}
+
+.container-Update-the-entire-product > SearchEngine {
+    width: 100%;
+}
+
+.form-update-product{
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form-update-product > 
+label, 
+input, 
+UploadPhoto {
+    margin-bottom: 1rem;
+}
+
+.form-update-product > label {
+    width: 70%;
+}
+.form-update-product > input {
+    width: 70%;
+    outline: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #4444;
+}
+
+.container-button-save {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.container-button-save > button {
+    margin-right: 1rem;
+}
+
+.product-photo-control-panel {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.submit-form-button {
+    outline: none;
+    padding: 0.3rem;
+    border: 1px solid #4444;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #4444, 3px 3px 3px #4444, 4px 4px 4px #4444;
+    color: white;
+
+}
+
+.save {
+    background-color: #009eff;
+}

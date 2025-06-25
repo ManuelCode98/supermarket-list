@@ -1,0 +1,13 @@
+
+
+.container-control-panel {
+    margin-top: 2rem;
+    border: 2px solid #4767e244;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.container-select-question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

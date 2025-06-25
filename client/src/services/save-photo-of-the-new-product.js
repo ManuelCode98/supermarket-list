@@ -1,4 +1,4 @@
-import { http } from "../../../index";
+import { http } from "../index";
 import optimizeImage from "./optimizeImage";
 
 const conexionImgbb = `https://api.imgbb.com/1/upload?key=12474afbd8f57b42c6df468c4bcf3cd7`;

@@ -1,9 +1,11 @@
 
 import { useEffect, useRef, useState } from 'react';
-import resultFieldSelection from './helpers/resultFieldSelection';
 import getAllProducts from './services/getAllProducts';
 import './search-engine.css';
-import Question from './components/Question/Question';
+import resultFieldSelection from './helpers/resultFieldSelection';
+
+
+export let exportFunctionSetAllproducts;
 
 const SearchEngine = ( { urlConnectionBackend } )=>{
     
@@ -21,6 +23,7 @@ const SearchEngine = ( { urlConnectionBackend } )=>{
         }
 
         functionSetAllproducts();
+        exportFunctionSetAllproducts = functionSetAllproducts;
 
     },[])
 
@@ -48,11 +51,10 @@ const SearchEngine = ( { urlConnectionBackend } )=>{
 
     return (
 
-        <div className='search-bar-container'>
+        <div className='search-bar-container-panel-control'>
             <div className='search-bar'>
-                <input ref={ inputSearch } className='input-search' type="search" onChange={ onInputChange } placeholder="Que producto buscas?" />
-                <div className='button-search' onClick={ takeMeToTheInput } >L</div>
-                <Question />
+                <input ref={ inputSearch } className='input-search' type="search" onChange={ onInputChange } placeholder="Que producto quieres actualizar?" />
+                <div className='button-search-control-panel' onClick={ takeMeToTheInput } >L</div>
             </div>
             <div id='container-input-search'>
                 {

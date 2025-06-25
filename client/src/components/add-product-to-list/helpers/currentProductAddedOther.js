@@ -1,4 +1,4 @@
-import { savePhotoOfTheNewProduct } from "../service/save-photo-of-the-new-product";
+import { savePhotoOfTheNewProduct } from "../../../services/save-photo-of-the-new-product";
 import currentProductAddedDatabase from "../service/currentProductAddedDatabase";
 import createProductDatabase from "../service/createProductDatabase";
 import { setCurrentProductSelection, setInputAmountStateExport, setInputPriceStateExport, setInputProductNameStateExport, setProductPhotoOtherTemporaryExport } from "../add-product-to-list";

@@ -54,7 +54,7 @@
 }
 
 .buttons {
-    font-family: 'icon-font2';
+    font-family: 'icon-font2', Arial, Helvetica, sans-serif;
     font-size: 35px;
     cursor: pointer;
 }

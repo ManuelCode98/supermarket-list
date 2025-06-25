@@ -1,4 +1,4 @@
-import { compressor } from "../../.."
+import { compressor } from "../index";
 
 
 

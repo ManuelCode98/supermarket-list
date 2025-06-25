@@ -7,10 +7,10 @@ import { urlConnectionBackend } from '../index';
 const Home = () => {    
 
   return (
-    <>
-        <SearchEngine urlConnectionBackend = { urlConnectionBackend } />
-        <RemoveCrossedOutProduct urlConnectionBackend = { urlConnectionBackend } />
-        <AddProductToList urlConnectionBackend = { urlConnectionBackend } />
+    <>  
+      <SearchEngine urlConnectionBackend = { urlConnectionBackend } />
+      <RemoveCrossedOutProduct urlConnectionBackend = { urlConnectionBackend } />
+      <AddProductToList urlConnectionBackend = { urlConnectionBackend } />
     </>
   )
 }

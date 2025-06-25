@@ -1,0 +1,11 @@
+
+
+.container-select-option {
+    display: flex;
+    padding: 0.3rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #4444;
+    
+}
