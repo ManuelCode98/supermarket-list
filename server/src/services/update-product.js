@@ -28,7 +28,7 @@ const updateProductDB = async( req, res )=>{
 
                     data: {
                         product_name,
-                        // product_photo,
+                        product_photo,
                         product_amount,
                         product_price,
                     }
