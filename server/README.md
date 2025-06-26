@@ -1,7 +1,7 @@
 # Pasos para correr la api
 
 ### Nota 
-Configura los archivos en este orden    
+Configura los archivos en este orden si no tienes una base de datos, si ya tienes base de datos sigue los pasos de la nota2   
 **database, server, client**
 
 **Estas en server**
@@ -32,5 +32,24 @@ Configura los archivos en este orden
 
 7. Luego ejecuta este comando
 
+    **npx prisma generate**
+
+8. Luego ejecuta este comando
+
     **npm run dev**
 
+## Nota2
+
+1. Cambiar el nombre del archivo .env.template a .env y agregar la informacion correspondiente
+
+2. Ejecuta el comando 
+
+    **npm install**
+
+3. Ejecuta el comando 
+
+    **npx prisma generate**
+
+4. Ejecuta el comando
+
+    **npm run dev**

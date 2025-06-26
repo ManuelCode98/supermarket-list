@@ -34,7 +34,7 @@ const DeleteAProduct = () => {
       <SearchEngine urlConnectionBackend={ urlConnectionBackend }/>
 
       <form className="form-update-product" onSubmit={ ( event ) => deleteAProductDatabase( event, productIdState, productNameState, productPhotoState) }>
-        { productNameState  && <div>{ productNameState }</div> }
+        { productNameState  && <div className='product-name-control-panel'>{ productNameState }</div> }
         { productPhotoState  && <img width='35' height='35' src={ productPhotoState } /> }
         <div className="container-button-save">
           <button disabled={activeState} 

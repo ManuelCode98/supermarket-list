@@ -8,8 +8,8 @@ const handleProductEdit = ( event, editOrNotEdit, setIndexProduct, index, setPro
     const crossed_out = currentTarget.className;
     
 
-    if ( target.innerText !== '&' ) return    
-    if ( target.innerText === '&' && crossed_out === 'crossed-out' ) {
+    if ( target.innerText !== 'stylus' ) return    
+    if ( target.innerText === 'stylus' && crossed_out === 'crossed-out' ) {
         
         swal.fire({
             title:'Oh!',

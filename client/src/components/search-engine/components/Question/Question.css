@@ -1,9 +1,5 @@
+
 .button-question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     color: blue;
     width: 5%;
     border: 1px solid #777676;
@@ -14,4 +10,10 @@
 .button-question:active {
     color: rgb(240, 142, 50);
     transform: scale( 1.1, 1.1);
+}
+
+@media ( max-width: 589px ){
+    .button-question {
+        width: 10%;
+    }
 }

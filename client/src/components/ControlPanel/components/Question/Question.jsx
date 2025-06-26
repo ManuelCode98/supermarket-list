@@ -25,9 +25,7 @@ const Question = () => {
   } 
   
   return (
-    <div className="button-question panel-select" >
-      <div onClick={ redirect }>?</div>
-    </div>
+      <span className='material-symbols-outlined button-question-control-panel' onClick={ redirect }>question_mark</span>
   )
 
 }

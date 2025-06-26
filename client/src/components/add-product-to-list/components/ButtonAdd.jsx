@@ -7,7 +7,7 @@ import currentProductAddedOther from "../helpers/currentProductAddedOther";
 
 const ButtonAdd = ( { data } ) => {
 
-    const [ buttonAddState, setButtonAddState ] = useState( 'W' );
+    const [ buttonAddState, setButtonAddState ] = useState( 'check_small' );
 
     const currentProductSelectionState  = data[0];
     const inputAmountState              = data[1]; 
@@ -23,9 +23,9 @@ const ButtonAdd = ( { data } ) => {
     <>
         {
         product_name !== 'Otros' ?
-            <div className="buttons buttons-add-cancel add" onClick={ ()=> currentProductAdded( currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState ) } > {buttonAddState} </div>
+            <span className="material-symbols-outlined buttons add" onClick={ ()=> currentProductAdded( currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState ) } >{buttonAddState}</span>
             :
-            <div className="buttons buttons-add-cancel add" onClick={ ()=> currentProductAddedOther( inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ) } > {buttonAddState} </div>
+            <span className="material-symbols-outlined buttons add" onClick={ ()=> currentProductAddedOther( inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ) } > {buttonAddState} </span>
         }
         
     </>

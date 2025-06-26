@@ -32,7 +32,7 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
 
     const [ currentProductSelectionState, setCurrentProductSelectionState ] = useState({});
 
-    const [ buttonCancelState, setButtonCancelState ] = useState( 'X' );
+    const [ buttonCancelState, setButtonCancelState ] = useState( 'close_small' );
     const [ productPhotoOtherState ,setProductPhotoOtherState ]=useState({});
     const [ inputProductNameState, setInputProductNameState ] = useState('')
     const [ inputAmountState, setInputAmountState ] = useState( 1 );
@@ -188,7 +188,7 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                 <ButtonAdd 
                                     data = { [ currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ] } 
                                     />
-                                <div className="buttons buttons-add-cancel cancel" onClick={ ()=> 
+                                <div className="material-symbols-outlined buttons cancel" onClick={ ()=> 
                                     resetProductSelection( setEditOrNotEdit, setIndexProduct, setInputAmountState, setInputPriceState )
                                     }> 
                                     {buttonCancelState} 
@@ -232,11 +232,11 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                     <td className="td-total-container">
                                         { indexProduct === index && crossed_out === 'not-crossed-out' ? (
                                             <>
-                                                <div id='button-update' className="buttons buttons-add-cancel add" onClick={ () => updateProduct( index, id, product_name, product_photo, inputAmountStateEdit, inputPriceStateEdit, crossed_out ) } > W </div>
-                                                <div id='button-reset' className="buttons buttons-add-cancel cancel" onClick={ () => 
+                                                <span id='button-update' className="material-symbols-outlined buttons add" onClick={ () => updateProduct( index, id, product_name, product_photo, inputAmountStateEdit, inputPriceStateEdit, crossed_out ) } > check_small </span>
+                                                <span id='button-reset' className="material-symbols-outlined buttons cancel" onClick={ () => 
                                                     resetProductSelection( setEditOrNotEdit, setIndexProduct, setInputAmountState, setInputPriceState ) 
-                                                    } > X 
-                                                </div>
+                                                    } > close_small 
+                                                </span>
                                             </>
                                         ) : (
                                             <>
@@ -246,7 +246,7 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                                         : result[0]
                                                      }
                                                 </div>
-                                                <div className="buttons button-edit edit" title="Editar" > & </div>
+                                                <span className="material-symbols-outlined buttons button-edit edit" title="Editar" > stylus </span>
                                             </>
                                         ) }
                                         

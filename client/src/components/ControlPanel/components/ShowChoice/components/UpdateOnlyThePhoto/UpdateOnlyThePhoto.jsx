@@ -36,7 +36,7 @@ const UpdateOnlyThePhoto = () => {
       <SearchEngine urlConnectionBackend={ urlConnectionBackend }/>
 
       <form className="form-update-product" onSubmit={ ( event ) => updateProductPhoto(event, productIdState, productNameState) }>
-        <div>{ productNameState }</div>
+        <div className="product-name-control-panel">{ productNameState }</div>
         <UploadPhoto />
         <div className="container-button-save">
           <button disabled={activeState} 

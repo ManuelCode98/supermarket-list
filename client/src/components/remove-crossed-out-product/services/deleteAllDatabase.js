@@ -16,7 +16,9 @@ const deleteAllDatabase = async( urlConnectionBackend ) => {
             iconColor: 'green',
             color: 'red', 
             confirmButtonColor:'#01a503',
+            confirmButtonText: 'Ok',
             background: '#00000087',
+            timer: 3000,
         })
 
     } catch ({ message }) {
@@ -28,7 +30,8 @@ const deleteAllDatabase = async( urlConnectionBackend ) => {
             color: 'red',
             timer: 3000,
             background: '#00000087',
-            confirmButtonColor:'#01a503'
+            confirmButtonColor:'#01a503',
+            confirmButtonText: 'Ok',
         })
         console.log(`No hay conexion en la base de datos, ${ message }`)
         

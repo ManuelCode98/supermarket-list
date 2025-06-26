@@ -1,7 +1,7 @@
 # Pasos para restaurar la base de datos
 
 ### Nota
-Configura los archivos en este orden    
+Configura los archivos en este orden si no tienes una base de datos   
 **database, server, client**
 
 **Estas en database** 

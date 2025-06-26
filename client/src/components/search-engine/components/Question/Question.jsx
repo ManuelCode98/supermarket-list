@@ -12,19 +12,24 @@ const Question = () => {
       icon:'question',
       color: 'red',
       background: '#00000087',
-      confirmButtonColor:'#01a503'
+      confirmButtonColor:'#01a503',
+      confirmButtonText:'Ok',
+      timer:3000,
     })
     .then( ({ isConfirmed }) =>{
       if( isConfirmed ){
 
         swal.fire({
-          text:'Si quieres administrar el inventario, como actualizar o borrar porductos presiona "OK"',
+          text:'Si quieres administrar el inventario, como actualizar o borrar porductos presiona "Si"',
           icon:'question',
           showCancelButton: true,
           color: 'red',
           background: '#00000087',
           confirmButtonColor:'#01a503',
           cancelButtonColor: 'red',
+          confirmButtonText:'Si',
+          cancelButtonText:'No',
+          timer: 3000,
         })
         .then(({ isConfirmed })=>{
 
@@ -38,9 +43,9 @@ const Question = () => {
   }
 
   return (
-    <div className="button-question" >
-      <div onClick={ redirect }>?</div>
-    </div>
+    // <div className="button-question" >
+      <span className='material-symbols-outlined button-question' onClick={ redirect }>question_mark</span>
+    // </div>
   )
 }
 

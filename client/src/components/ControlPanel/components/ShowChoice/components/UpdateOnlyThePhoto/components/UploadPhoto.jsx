@@ -23,11 +23,11 @@ const UploadPhoto = () => {
             <label htmlFor='input-file' className="label-file" >
                 {   uploadPhotoState.length > 0 
                     ? <div className="div-img-upload">
-                            <img className="img-temporary-url" src={ uploadPhotoState } />
+                            <img className="img-temporary-url-control-panel" src={ uploadPhotoState } />
                       </div>  
 
                     : <div className="div-letter-upload">
-                        <p>D</p>
+                        <span className="material-symbols-outlined camera-control-panel">add_a_photo</span>
                       </div>
                 }
                 

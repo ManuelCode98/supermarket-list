@@ -1,8 +1,10 @@
 # Pasos correr el frontend
 
+
 ### Nota 
-Configura los archivos en este orden    
+Configura los archivos en este orden si no tienes ninguna base de datos    
 **database, server, client**
+
 
 **Estas en client**
 
@@ -17,4 +19,3 @@ Configura los archivos en este orden
 3. Luego ejecuta este comando
 
     **npm run dev**
-

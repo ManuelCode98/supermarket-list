@@ -5,7 +5,7 @@ const loadProductsWhenReloading = async( )=>{
 
     try {
 
-        const { data } = await http.get( `${urlConnectionBackend}api/show-products`, { timeout: 2500 } )
+        const { data } = await http.get( `${urlConnectionBackend}api/show-products`, { timeout: 5000 } )
         
         return data.products
 

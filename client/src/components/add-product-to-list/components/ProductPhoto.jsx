@@ -21,7 +21,7 @@ const ProductPhoto = ( { data } ) => {
                   </div>
                   :
                   <div className="div-letter-other">
-                    <p>D</p>
+                    <span className="material-symbols-outlined camera">add_a_photo</span>
                   </div>
               }
             </label> 

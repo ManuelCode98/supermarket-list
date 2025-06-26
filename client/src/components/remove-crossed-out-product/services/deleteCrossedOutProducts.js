@@ -20,7 +20,9 @@ const deleteCrossedOutProducts = async( urlConnectionBackend ) => {
             icon:'error',
             color: 'red',
             background: '#00000087',
-            confirmButtonColor:'#01a503'
+            confirmButtonColor:'#01a503',
+            confirmButtonText: 'Ok',
+            timer: 3000,
         })
 
         console.log(`No hay conexion con la base de datos, ${ message }`)

@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.product-name-control-panel{
+    margin-bottom: 1rem;
+}
+
 .form-update-product{
     padding: 1rem 0.5rem 1rem 0.5rem;
     display: flex;

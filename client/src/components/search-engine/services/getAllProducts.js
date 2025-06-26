@@ -5,7 +5,7 @@ import { http } from '../../../index';
 const getAllProducts = async( urlConnectionBackend ) => {
   
     try {
-        const products = await http.get( `${ urlConnectionBackend }api/get-all-products`, { timeout: 3500 } )
+        const products = await http.get( `${ urlConnectionBackend }api/get-all-products`, { timeout: 5000 } )
 
         return products.data;
 

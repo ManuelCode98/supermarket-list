@@ -11,8 +11,8 @@ export let exportSetChangePanelState;
 function App() {
 
   const { width, height } = useScreenSize();
-  // const [changePanelState, setChangePanelState] = useState(true);
-  const [changePanelState, setChangePanelState] = useState(false);
+  const [changePanelState, setChangePanelState] = useState(true);
+  // const [changePanelState, setChangePanelState] = useState(false);
 
   exportSetChangePanelState = setChangePanelState;
 

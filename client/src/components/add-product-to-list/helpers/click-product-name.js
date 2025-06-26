@@ -11,7 +11,7 @@ const clickProductName = async( event, id, product_name, product_photo, product_
     const WhatClassDoesItHave = currentTarget.className;
 
     
-    if( target.innerText === '&' ) return
+    if( target.innerText === 'stylus' ) return
         
     if( editOrNotEdit === 'edit' ) return
 
