@@ -188,7 +188,7 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                 <ButtonAdd 
                                     data = { [ currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ] } 
                                     />
-                                <div className="material-symbols-outlined buttons cancel" onClick={ ()=> 
+                                <div className="material-symbols-outlined notranslate buttons cancel" translate="no" onClick={ ()=> 
                                     resetProductSelection( setEditOrNotEdit, setIndexProduct, setInputAmountState, setInputPriceState )
                                     }> 
                                     {buttonCancelState} 
@@ -232,8 +232,8 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                     <td className="td-total-container">
                                         { indexProduct === index && crossed_out === 'not-crossed-out' ? (
                                             <>
-                                                <span id='button-update' className="material-symbols-outlined buttons add" onClick={ () => updateProduct( index, id, product_name, product_photo, inputAmountStateEdit, inputPriceStateEdit, crossed_out ) } > check_small </span>
-                                                <span id='button-reset' className="material-symbols-outlined buttons cancel" onClick={ () => 
+                                                <span id='button-update' className="material-symbols-outlined notranslate buttons add" translate="no" onClick={ () => updateProduct( index, id, product_name, product_photo, inputAmountStateEdit, inputPriceStateEdit, crossed_out ) } > check_small </span>
+                                                <span id='button-reset' className="material-symbols-outlined notranslate buttons cancel" translate="no" onClick={ () => 
                                                     resetProductSelection( setEditOrNotEdit, setIndexProduct, setInputAmountState, setInputPriceState ) 
                                                     } > close_small 
                                                 </span>
@@ -246,7 +246,7 @@ const AddProductToList = ( { urlConnectionBackend } )=>{
                                                         : result[0]
                                                      }
                                                 </div>
-                                                <span className="material-symbols-outlined buttons button-edit edit" title="Editar" > stylus </span>
+                                                <span className="material-symbols-outlined notranslate buttons button-edit edit" translate="no" title="Editar" > stylus </span>
                                             </>
                                         ) }
                                         

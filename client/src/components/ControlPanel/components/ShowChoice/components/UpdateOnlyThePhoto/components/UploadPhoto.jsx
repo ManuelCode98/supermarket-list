@@ -27,7 +27,7 @@ const UploadPhoto = () => {
                       </div>  
 
                     : <div className="div-letter-upload">
-                        <span className="material-symbols-outlined camera-control-panel">add_a_photo</span>
+                        <span className="material-symbols-outlined notranslate camera-control-panel" translate="no">add_a_photo</span>
                       </div>
                 }
                 

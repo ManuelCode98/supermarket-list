@@ -23,9 +23,9 @@ const ButtonAdd = ( { data } ) => {
     <>
         {
         product_name !== 'Otros' ?
-            <span className="material-symbols-outlined buttons add" onClick={ ()=> currentProductAdded( currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState ) } >{buttonAddState}</span>
+            <span className="material-symbols-outlined notranslate buttons add" translate="no" onClick={ ()=> currentProductAdded( currentProductSelectionState, inputAmountState, inputPriceState, receiveProductState, setReceiveProductState ) } >{buttonAddState}</span>
             :
-            <span className="material-symbols-outlined buttons add" onClick={ ()=> currentProductAddedOther( inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ) } > {buttonAddState} </span>
+            <span className="material-symbols-outlined notranslate buttons add" translate="no" onClick={ ()=> currentProductAddedOther( inputAmountState, inputPriceState, receiveProductState, setReceiveProductState, inputProductNameState, productPhotoOtherState ) } > {buttonAddState} </span>
         }
         
     </>

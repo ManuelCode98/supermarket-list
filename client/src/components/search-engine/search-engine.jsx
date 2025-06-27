@@ -51,7 +51,7 @@ const SearchEngine = ( { urlConnectionBackend } )=>{
         <div className='search-bar-container'>
             <div className='search-bar'>
                 <input ref={ inputSearch } className='input-search' type="search" onChange={ onInputChange } placeholder="Que producto buscas?" />
-                <span className="material-symbols-outlined button-search" onClick={ takeMeToTheInput }>
+                <span className="material-symbols-outlined notranslate button-search" translate='no' onClick={ takeMeToTheInput }>
                     search
                 </span>
                 <Question />
