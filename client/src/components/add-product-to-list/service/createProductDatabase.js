@@ -4,11 +4,12 @@ import { http, urlConnectionBackend } from '../../../index';
 const createProductDatabase = async( product ) => {
 
     try {
-        const { data }= await http.post(`${urlConnectionBackend}api/create-product`, product)
+        const { data }= await http.post(`${urlConnectionBackend}api/create-product`, product, { timeout:5000 })
 
         const id = data.id
         return id
     } catch ({ message }) {
+        
         swal.fire({
             title:'Oh!',
             text:'No se pudo guardar el nuevo producto en la base de datos!',

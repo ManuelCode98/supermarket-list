@@ -1,7 +1,3 @@
-@font-face {
-    src: url('../../../../../../../../assets/web-symbols/WebSymbols-Regular.otf');
-    font-family: 'icon-font';
-}
 
 .search-bar-container-panel-control {
     display: flex;

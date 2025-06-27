@@ -6,7 +6,7 @@ import { uploadProductsAfterDeleting } from "../../add-product-to-list/add-produ
 const deleteAllDatabase = async( urlConnectionBackend ) => {
     try {
   
-        const { data } = await http.delete(`${urlConnectionBackend}api/delete-all-products`)
+        const { data } = await http.delete(`${urlConnectionBackend}api/delete-all-products`, { timeout: 5000 })
 
         const products = data.data;
         uploadProductsAfterDeleting( products );

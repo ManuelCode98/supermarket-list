@@ -6,7 +6,7 @@ const currentProductAddedDatabase = async( product, receiveProductState, setRece
 
     try {
 
-        await http.post(`${urlConnectionBackend}api/add-product-to-list`, product, { timeout: 2500 } )
+        await http.post(`${urlConnectionBackend}api/add-product-to-list`, product, { timeout: 5000 } )
 
     } catch ({ message }) {
 

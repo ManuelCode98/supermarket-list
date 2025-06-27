@@ -8,7 +8,7 @@ const updateProductToList = async( product, setReceiveProductState, receiveProdu
     const { id } = product;
 
     try {
-        await http.put(`${urlConnectionBackend}api/update-product-list/${id}`, product)
+        await http.put(`${urlConnectionBackend}api/update-product-list/${id}`, product, { timeout: 5000 })
     } catch ({ message }) {
         setReceiveProductState( receiveProductState )
 

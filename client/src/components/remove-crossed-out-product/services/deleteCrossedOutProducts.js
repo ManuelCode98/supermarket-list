@@ -7,7 +7,7 @@ import { uploadProductsAfterDeleting } from "../../add-product-to-list/add-produ
 const deleteCrossedOutProducts = async( urlConnectionBackend ) => {
   
     try {
-        const { data } = await http.get(`${urlConnectionBackend}api/get-crossed-out-products` )
+        const { data } = await http.get(`${urlConnectionBackend}api/get-crossed-out-products`, { timeout: 5000 } )
 
         const products = data.data;
         uploadProductsAfterDeleting( products )

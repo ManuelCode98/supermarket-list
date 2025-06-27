@@ -47,7 +47,7 @@ const deleteAProductDatabase = async( event, id, product_name, product_photo ) =
 
         try {
 
-            const product = await http.delete(`${urlConnectionBackend}api/delete-product/${id}`)
+            const product = await http.delete(`${urlConnectionBackend}api/delete-product/${id}`, { timeout: 5000 })
 
             if( product ) exportFunctionSetAllproducts();
 

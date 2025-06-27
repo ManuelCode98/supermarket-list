@@ -15,6 +15,39 @@ const currentProductAddedOther = async( inputAmountState, inputPriceState, recei
     
     const result = product_amount * product_price;
     
+    if( productPhotoOtherState.name === undefined ){
+
+        swal.fire({
+            title: 'Oh!',
+            text: 'Sin la foto del producto no puedes seguir!',
+            icon: 'error',
+            confirmButtonText:'Ok',
+            confirmButtonColor: '#01a503',
+            color:'red',
+            background: '#00000087',
+            timer: 3000,
+
+        })
+
+        return
+    }
+
+    if( product_name.length < 1 ){
+
+        swal.fire({
+            title: 'Oh!',
+            text: 'Sin el nombre del producto no puedes seguir!',
+            icon: 'error',
+            confirmButtonText:'Ok',
+            confirmButtonColor: '#01a503',
+            color:'red',
+            background: '#00000087',
+            timer: 3000,
+
+        })
+
+        return
+    }
     
     if( productPhotoOtherState ){
         

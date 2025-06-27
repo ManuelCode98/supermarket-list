@@ -17,7 +17,7 @@ const saveClassCrossedOutDatabase = async( productClassName, id, product_name, p
 
     try {
         
-        await http.post( `${urlConnectionBackend}api/save-crossed-out-products`, product )
+        await http.post( `${urlConnectionBackend}api/save-crossed-out-products`, product, { timeout: 5000 } )
 
     } catch ({ message }) {
         

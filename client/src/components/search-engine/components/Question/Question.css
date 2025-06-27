@@ -5,6 +5,7 @@
     border: 1px solid #777676;
     border-radius: 0px 3px;
     transition: background-color 300ms;
+    cursor: pointer;
 }
 
 .button-question:active {

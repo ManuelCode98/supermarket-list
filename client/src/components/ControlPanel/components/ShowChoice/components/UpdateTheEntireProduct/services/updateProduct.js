@@ -60,7 +60,7 @@ const updateProduct = async( event, id ) => {
         const product = await http.put(`${urlConnectionBackend}api/update-product/${id}`, {
             product_name,
             product_photo: url,
-        })
+        }, { timeout: 5000 })
 
         if( product ) exportFunctionSetAllproducts();
         
